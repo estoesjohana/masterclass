@@ -20,19 +20,21 @@ section{padding:64px 0}
 h1,h2{font-family:'Playfair Display',serif;color:var(--blanco);line-height:1.12}
 h1{font-size:52px;font-weight:900}
 h2{font-size:36px;font-weight:700;margin-bottom:20px}
-h1 .it,h2 .it{font-style:italic;font-weight:700;color:var(--crema)}
+h1 .it{font-style:italic;font-weight:700;color:var(--dorado)}
+h2 .it{font-style:italic;font-weight:700;color:var(--crema)}
 .sub{font-family:'Playfair Display',serif;font-style:italic;font-size:24px;color:var(--crema);margin-top:16px;line-height:1.35}
 .lead{font-size:17.5px;line-height:1.75;margin:24px auto 0;max-width:640px;color:var(--crema)}
 .line{width:74px;height:2px;background:var(--dorado);margin:26px auto}
 .datos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
-.dato{border:1px solid rgba(246,240,227,.35);border-radius:999px;padding:11px 22px;
-  font-size:14.5px;font-weight:600;letter-spacing:.04em;color:var(--blanco)}
-.dato b{color:var(--blanco)}
+.dato{border:1px solid var(--dorado);background:var(--dorado);border-radius:999px;padding:11px 22px;
+  font-size:14.5px;font-weight:600;letter-spacing:.04em;color:var(--vino)}
+.dato b{color:var(--vino)}
 .btn{display:inline-block;margin-top:30px;padding:19px 52px;border-radius:999px;
   font-weight:700;font-size:17.5px;letter-spacing:.02em;text-decoration:none;
   background:var(--blanco);color:var(--vino);box-shadow:0 16px 36px rgba(0,0,0,.35);transition:transform .25s}
 .btn:hover{transform:translateY(-2px)}
 .btn.oro{background:var(--blanco);color:var(--vino)}
+.btn.vino{background:var(--vino);color:var(--blanco)}
 .micro{margin-top:14px;font-size:13px;letter-spacing:.05em;opacity:.75}
 .lista{list-style:none;max-width:600px;margin:26px auto 0}
 .lista li{font-size:16.5px;line-height:1.6;padding:11px 0;border-bottom:1px dashed rgba(246,240,227,.25)}
@@ -48,13 +50,13 @@ h1 .it,h2 .it{font-style:italic;font-weight:700;color:var(--crema)}
 .card.destacado .precio{color:var(--vino)}
 .card p{font-size:15px;line-height:1.65}
 .card.destacado p{color:#3A3A3A}
-.tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blanco);color:var(--vino);
+.tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--dorado);color:var(--vino);
   font-size:11.5px;font-weight:700;letter-spacing:.16em;padding:7px 18px;border-radius:999px;text-transform:uppercase;white-space:nowrap}
 .frase{font-family:'Playfair Display',serif;font-style:italic;font-size:29px;line-height:1.4;color:var(--blanco);max-width:720px;margin:0 auto}
 footer{background:#1B000A;color:rgba(246,240,227,.65);padding:40px 20px;font-size:13.5px;line-height:1.7}
 footer a{color:var(--blanco);text-decoration:none}
 .presentan{font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--blanco);margin-bottom:14px}
-.titulo-evento{font-family:'Playfair Display',serif;font-size:15px;font-weight:900;color:var(--blanco);margin-bottom:14px}
+.titulo-evento{font-family:'Playfair Display',serif;font-size:15px;font-weight:900;color:var(--dorado);margin-bottom:14px}
 .logo-esquina{position:absolute;top:16px;left:16px;width:64px;height:auto}
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:999;background:rgba(27,0,10,.94);border-top:1px solid rgba(246,240,227,.28);padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:18px}
 .sticky-cta .txt{font-size:14.5px;font-weight:600;color:var(--crema);letter-spacing:.02em}
@@ -149,7 +151,7 @@ footer a{color:var(--blanco);text-decoration:none}
         <h3>Miembros del Club</h3>
         <div class="precio">$67</div>
         <p>Todo lo de la edición, al precio de miembros de <b>Entre Nosotras Mujer Club</b>. Es el Pilar 3, «IA como tu aceleradora», en versión intensiva.</p>
-        <a class="btn" href="https://buy.stripe.com/4gM9AS2ZG1P8gnj8EleME1T">Soy del Club — $67</a>
+        <a class="btn vino" href="https://buy.stripe.com/4gM9AS2ZG1P8gnj8EleME1T">Soy del Club — $67</a>
         <p class="micro">Miembros del Club: pagan $67 con su código privado (lo reciben dentro del Club).</p>
       </div>
     </div>
