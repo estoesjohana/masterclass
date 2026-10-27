@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Masterclass: Tu asistente virtual desde cero — Johanna Brizuela</title>
+<style>
+:root{
+  --vino:#3E0111; --vino-2:#2A010B; --vino-claro:#5A1226;
+  --blanco:#FFFFFF; --crema:#F6F0E3; --oro:#C9A24B; --mostaza:#F5D67B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{font-family:'Montserrat',sans-serif;color:var(--crema);background:var(--vino);
+  -webkit-font-smoothing:antialiased;text-align:center}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+section{padding:64px 0}
+.logo{width:min(300px,70vw);height:auto;display:block;margin:0 auto}
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--oro);margin-bottom:22px}
+h1,h2{font-family:'Playfair Display',serif;color:var(--blanco);line-height:1.12}
+h1{font-size:52px;font-weight:900}
+h2{font-size:36px;font-weight:700;margin-bottom:20px}
+h1 .it,h2 .it{font-style:italic;font-weight:700;color:var(--mostaza)}
+.sub{font-family:'Playfair Display',serif;font-style:italic;font-size:24px;color:var(--crema);margin-top:16px;line-height:1.35}
+.lead{font-size:17.5px;line-height:1.75;margin:24px auto 0;max-width:640px;color:var(--crema)}
+.line{width:74px;height:2px;background:var(--oro);margin:26px auto}
+.datos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
+.dato{border:1px solid rgba(246,240,227,.35);border-radius:999px;padding:11px 22px;
+  font-size:14.5px;font-weight:600;letter-spacing:.04em;color:var(--blanco)}
+.dato b{color:var(--mostaza)}
+.btn{display:inline-block;margin-top:30px;padding:19px 52px;border-radius:999px;
+  font-weight:700;font-size:17.5px;letter-spacing:.02em;text-decoration:none;
+  background:var(--blanco);color:var(--vino);box-shadow:0 16px 36px rgba(0,0,0,.35);transition:transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn.oro{background:var(--mostaza);color:var(--vino-2)}
+.micro{margin-top:14px;font-size:13px;letter-spacing:.05em;opacity:.75}
+.lista{list-style:none;max-width:600px;margin:26px auto 0}
+.lista li{font-size:16.5px;line-height:1.6;padding:11px 0;border-bottom:1px dashed rgba(246,240,227,.25)}
+.lista li:last-child{border-bottom:none}
+.lista li::before{content:'—';margin-right:9px;color:var(--oro);font-weight:700}
+.alt{background:var(--vino-2)}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:44px;max-width:760px;margin-left:auto;margin-right:auto}
+.card{border:1px solid rgba(246,240,227,.4);border-radius:24px;padding:44px 34px;background:rgba(255,255,255,.03);position:relative}
+.card.destacado{background:var(--blanco);color:var(--vino)}
+.card h3{font-family:'Playfair Display',serif;font-size:27px;color:var(--blanco)}
+.card.destacado h3{color:var(--vino)}
+.precio{font-size:54px;font-weight:700;color:var(--mostaza);margin:12px 0 6px}
+.card.destacado .precio{color:var(--vino)}
+.card p{font-size:15px;line-height:1.65}
+.card.destacado p{color:#3A3A3A}
+.tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--mostaza);color:var(--vino-2);
+  font-size:11.5px;font-weight:700;letter-spacing:.16em;padding:7px 18px;border-radius:999px;text-transform:uppercase;white-space:nowrap}
+.frase{font-family:'Playfair Display',serif;font-style:italic;font-size:29px;line-height:1.4;color:var(--blanco);max-width:720px;margin:0 auto}
+footer{background:#1B000A;color:rgba(246,240,227,.65);padding:40px 20px;font-size:13.5px;line-height:1.7}
+footer a{color:var(--mostaza);text-decoration:none}
+@media(max-width:720px){h1{font-size:37px}h2{font-size:29px}.sub{font-size:20px}section{padding:48px 0}.frase{font-size:23px}}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section style="padding-top:56px">
+  <div class="wrap">
+    <img class="logo" src="logo-blanco.png" alt="Entre Nosotras Mujer Club — Johanna Brizuela">
+    <p class="kicker" style="margin-top:34px">Masterclass en vivo · Por Zoom</p>
+    <h1>Tu asistente virtual <span class="it">desde cero</span></h1>
+    <p class="sub">Créalo, configúralo y ponlo a trabajar — en una sola noche.</p>
+    <div class="line"></div>
+    <p class="lead">En una sola noche sales con tu asistente virtual <b>creado, configurado con tu información y tu voz</b>, con tu historia migrada desde la IA que hoy usas — y ya produciendo: tu primer análisis hecho, tus sistemas andando y tu primer video creado con él.</p>
+    <div class="datos">
+      <span class="dato">📅 <b>Miércoles 11 de noviembre</b></span>
+      <span class="dato">🕕 <b>6:00–9:00 PM</b> hora del Este</span>
+      <span class="dato">💻 <b>Zoom en vivo</b> · construcción guiada</span>
+      <span class="dato">👑 Cupo: <b>30 a 40 mujeres</b></span>
+    </div>
+    <a class="btn oro" href="#precios">Quiero mi cupo</a>
+    <p class="micro">Inscripciones cierran el lunes 9 de noviembre — necesitas 48 horas para preparar tu migración.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">La promesa de la noche</p>
+    <h2>Esa noche sales <span class="it">con todo esto funcionando</span></h2>
+    <ul class="lista">
+      <li>Tu asistente <b>configurado</b>: sabe quién eres, qué vendes, a quién le hablas y cómo debe hablarte</li>
+      <li>Tu información <b>migrada</b> desde ChatGPT, Gemini o Claude — no empiezas de cero</li>
+      <li>Tu <b>primer análisis</b> de Instagram o web hecho en vivo, con plan de acción</li>
+      <li>Tus <b>sistemas diarios activos</b>: contenido, resumen de la mañana y seguimiento de metas</li>
+      <li>Tu <b>primer video corto</b> creado con tu asistente, listo para publicar</li>
+      <li>La seguridad clara: qué compartir, qué no, y cómo tú mantienes el control de todo</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Todo incluido</p>
+    <h2>Qué incluye <span class="it">tu inscripción</span></h2>
+    <ul class="lista">
+      <li><b>La sesión en vivo (2,5 horas de construcción guiada)</b> — Johanna comparte su pantalla y haces cada paso con ella, al mismo tiempo</li>
+      <li><b>Guía Paso a Paso (PDF)</b> — el resumen completo de todo lo de la sesión, para repetir cada proceso cuando quieras</li>
+      <li><b>Kit de Arranque</b> — las plantillas de prompts de Johanna, listas para copiar y pegar</li>
+      <li>⭐ <b>BONO VIP: tu primer video con tu asistente</b> — incluido solo en esta edición en vivo</li>
+      <li><b>Grabación de la sesión</b> — para repasar cada paso a tu ritmo</li>
+      <li><b>Zoom de dudas a los 7 días</b> — una sesión corta para lo que practiques en la semana</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">¿Es para ti?</p>
+    <h2>Esto es para ti <span class="it">si…</span></h2>
+    <ul class="lista">
+      <li>Tienes un negocio y el día no te alcanza: el contenido, los mensajes y el seguimiento salen de tu cabeza y de notas sueltas</li>
+      <li>Hoy le «preguntas cosas» a ChatGPT o a otra IA — o ni eso — y quieres un asistente que <b>te conozca y ejecute</b></li>
+      <li>Quieres nivel cero de verdad: no necesitas saber de tecnología, Johanna te lleva paso a paso en pantalla grande</li>
+    </ul>
+    <p class="lead" style="margin-top:30px"><b>No es para ti</b> si buscas «prompts mágicos» sin configurar nada, o si no puedes estar la sesión completa con tu computadora abierta haciendo el trabajo en vivo.</p>
+  </div>
+</section>
+
+<section id="precios">
+  <div class="wrap">
+    <p class="kicker">Inversión</p>
+    <h2>Asegura tu cupo <span class="it">antes del 9 de noviembre</span></h2>
+    <div class="tarjetas">
+      <div class="card">
+        <h3>Público general</h3>
+        <div class="precio">$97</div>
+        <p>Masterclass en vivo + Guía Paso a Paso + Kit de Arranque + BONO VIP del video + grabación + Zoom de dudas.</p>
+        <a class="btn" href="https://buy.stripe.com/4gM9AS2ZG1P8gnj8EleME1T">Quiero mi cupo — $97</a>
+        <p class="micro">Pago seguro con Stripe.</p>
+      </div>
+      <div class="card destacado">
+        <span class="tag">Precio de la casa</span>
+        <h3>Miembros del Club</h3>
+        <div class="precio">$67</div>
+        <p>Todo lo de la edición, al precio de miembros de <b>Entre Nosotras Mujer Club</b>. Es el Pilar 3, «IA como tu aceleradora», en versión intensiva.</p>
+        <a class="btn" href="https://buy.stripe.com/4gM9AS2ZG1P8gnj8EleME1T">Soy del Club — $67</a>
+        <p class="micro">Miembros del Club: usa tu código <b>CLUB67</b> al pagar y te queda en $67.</p>
+      </div>
+    </div>
+    <p class="micro" style="max-width:600px;margin:30px auto 0">Cupo total: 30 a 40 mujeres. Las inscripciones cierran el <b>lunes 9 de noviembre a medianoche</b> — quien entra alcanza a preparar su migración con el checklist que le envío.</p>
+  </div>
+</section>
+
+<section class="alt" style="padding:56px 0">
+  <div class="wrap">
+    <p class="frase">«Yo muevo mi negocio entero con mi asistente. Esa noche, tú sales con el tuyo trabajando. Si yo pude, vos también podéis.»</p>
+    <p class="micro" style="margin-top:18px">— Johanna Brizuela</p>
+    <a class="btn oro" href="#precios">Asegurar mi cupo</a>
+    <p class="micro">¿Dudas? Escríbeme por WhatsApp: <a href="https://wa.me/19046293118" style="color:var(--mostaza);text-decoration:none">+1 (904) 629-3118</a></p>
+  </div>
+</section>
+
+<footer>
+  Johanna Brizuela · @estoesjohana · Entre Nosotras Mujer Club · entrenosotrasmujer.com<br>
+  Masterclass «Tu asistente virtual desde cero» · Miércoles 11 de noviembre de 2026 · 6:00–9:00 PM ET · Zoom
+</footer>
+</body>
+</html>
