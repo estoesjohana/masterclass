@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Masterclass: Tu asistente virtual desde cero — Johanna Brizuela</title>
+<title>Masterclass en vivo por Zoom: Tu asistente virtual desde cero — Johanna Brizuela</title>
 <style>
 :root{
   --vino:#3E0111; --vino-2:#2A010B; --vino-claro:#5A1226;
@@ -12,7 +12,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{overflow-x:hidden}
 body{font-family:'Montserrat',sans-serif;color:var(--crema);background:var(--vino);
-  -webkit-font-smoothing:antialiased;text-align:center}
+  -webkit-font-smoothing:antialiased;text-align:center;padding-bottom:92px}
 .wrap{max-width:880px;margin:0 auto;padding:0 24px}
 section{padding:64px 0}
 .logo{width:min(300px,70vw);height:auto;display:block;margin:0 auto}
@@ -53,7 +53,12 @@ h1 .it,h2 .it{font-style:italic;font-weight:700;color:var(--mostaza)}
 .frase{font-family:'Playfair Display',serif;font-style:italic;font-size:29px;line-height:1.4;color:var(--blanco);max-width:720px;margin:0 auto}
 footer{background:#1B000A;color:rgba(246,240,227,.65);padding:40px 20px;font-size:13.5px;line-height:1.7}
 footer a{color:var(--mostaza);text-decoration:none}
-@media(max-width:720px){h1{font-size:37px}h2{font-size:29px}.sub{font-size:20px}section{padding:48px 0}.frase{font-size:23px}}
+.presentan{font-size:12.5px;font-weight:600;letter-spacing:.30em;text-transform:uppercase;color:var(--crema);opacity:.85;margin-bottom:20px}
+.titulo-evento{font-family:'Playfair Display',serif;font-size:27px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mostaza);margin-bottom:16px}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:999;background:rgba(27,0,10,.94);border-top:1px solid rgba(246,240,227,.28);padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:18px}
+.sticky-cta .txt{font-size:14.5px;font-weight:600;color:var(--crema);letter-spacing:.02em}
+.sticky-cta a{display:inline-block;background:var(--mostaza);color:var(--vino-2);font-weight:700;font-size:15.5px;letter-spacing:.04em;padding:14px 32px;border-radius:999px;text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.4);white-space:nowrap}
+@media(max-width:720px){h1{font-size:37px}h2{font-size:29px}.sub{font-size:20px}section{padding:48px 0}.frase{font-size:23px}.titulo-evento{font-size:20px}.sticky-cta .txt{display:none}.sticky-cta a{width:100%;text-align:center}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 </head>
@@ -62,17 +67,20 @@ footer a{color:var(--mostaza);text-decoration:none}
 <section style="padding-top:56px">
   <div class="wrap">
     <img class="logo" src="logo-blanco.png" alt="Entre Nosotras Mujer Club — Johanna Brizuela">
-    <p class="kicker" style="margin-top:34px">Masterclass en vivo · Por Zoom</p>
+    <p class="presentan" style="margin-top:34px">Johanna Brizuela y Entre Nosotras Mujer Club presentan</p>
+    <p class="titulo-evento">Masterclass en vivo por Zoom</p>
     <h1>Tu asistente virtual <span class="it">desde cero</span></h1>
     <p class="sub">Créalo, configúralo y ponlo a trabajar — en una sola noche.</p>
     <div class="line"></div>
-    <p class="lead">En una sola noche sales con tu asistente virtual <b>creado, configurado con tu información y tu voz</b>, con tu historia migrada desde la IA que hoy usas — y ya produciendo: tu primer análisis hecho, tus sistemas andando y tu primer video creado con él.</p>
+    <p class="lead">En una sola noche sales con tu asistente virtual <b>creado, configurado con tu información y tu voz</b>, con tu historia migrada desde la IA que hoy usas — y ya produciendo: tu primer análisis hecho, tus sistemas andando y el guión de tu primer video creado con él.</p>
+    <p class="lead">Y esto no es un chatbot que solo responde preguntas: <b>tu asistente se conecta con tus herramientas y ejecuta tareas por ti</b> — crea tu contenido, organiza tu semana y avanza tu trabajo <b>mientras tú estás ocupada en otra cosa</b>.</p>
     <div class="datos">
       <span class="dato">📅 <b>Miércoles 11 de noviembre</b></span>
       <span class="dato">🕕 <b>6:00–9:00 PM</b> hora del Este</span>
       <span class="dato">💻 <b>Zoom en vivo</b> · construcción guiada</span>
-      <span class="dato">👑 Cupo: <b>30 a 40 mujeres</b></span>
+      <span class="dato">🎟️ Cupo limitado: <b>30 a 40 personas</b></span>
     </div>
+    <p class="micro" style="margin-top:16px;font-size:14px;opacity:.85">Abierto también para hombres que quieran crear su asistente.</p>
     <a class="btn oro" href="#precios">Quiero mi cupo</a>
     <p class="micro">Inscripciones cierran el lunes 9 de noviembre — necesitas 48 horas para preparar tu migración.</p>
   </div>
@@ -86,8 +94,10 @@ footer a{color:var(--mostaza);text-decoration:none}
       <li>Tu asistente <b>configurado</b>: sabe quién eres, qué vendes, a quién le hablas y cómo debe hablarte</li>
       <li>Tu información <b>migrada</b> desde ChatGPT, Gemini o Claude — no empiezas de cero</li>
       <li>Tu <b>primer análisis</b> de Instagram o web hecho en vivo, con plan de acción</li>
-      <li>Tus <b>sistemas diarios activos</b>: contenido, resumen de la mañana y seguimiento de metas</li>
-      <li>Tu <b>primer video corto</b> creado con tu asistente, listo para publicar</li>
+      <li><b>CREAR CONTENIDO con tu asistente</b>: ideas, textos y tu calendario de contenido, escritos en tu voz</li>
+      <li>Un asistente que <b>ejecuta por ti</b>: conectado a tus herramientas, sigue trabajando en tus tareas mientras tú estás ocupada en otra cosa</li>
+      <li>Tus <b>sistemas diarios activos</b>: resumen de la mañana, seguimiento de metas y tu contenido en marcha</li>
+      <li>El <b>guión de tu primer video corto</b>: idea, gancho y guión creados con tu asistente, listos para que tú lo grabes</li>
       <li>La seguridad clara: qué compartir, qué no, y cómo tú mantienes el control de todo</li>
     </ul>
   </div>
@@ -100,10 +110,9 @@ footer a{color:var(--mostaza);text-decoration:none}
     <ul class="lista">
       <li><b>La sesión en vivo (2,5 horas de construcción guiada)</b> — Johanna comparte su pantalla y haces cada paso con ella, al mismo tiempo</li>
       <li><b>Guía Paso a Paso (PDF)</b> — el resumen completo de todo lo de la sesión, para repetir cada proceso cuando quieras</li>
-      <li><b>Kit de Arranque</b> — las plantillas de prompts de Johanna, listas para copiar y pegar</li>
-      <li>⭐ <b>BONO VIP: tu primer video con tu asistente</b> — incluido solo en esta edición en vivo</li>
+      <li><b>Kit de Arranque</b> — las plantillas de prompts de Johanna: instrucciones listas para <b>copiar y pegar</b> en tu asistente — crear contenido, analizar tu Instagram, organizar tu semana, escribir textos de venta — funcionando desde esa misma noche</li>
+      <li>⭐ <b>BONO: tu primer video corto</b> — sales de la clase con la <b>idea, el gancho y el guión</b> de tu primer video creados con tu asistente, listos para que tú lo grabes — incluido solo en esta edición en vivo</li>
       <li><b>Grabación de la sesión</b> — para repasar cada paso a tu ritmo</li>
-      <li><b>Zoom de dudas a los 7 días</b> — una sesión corta para lo que practiques en la semana</li>
     </ul>
   </div>
 </section>
@@ -129,7 +138,7 @@ footer a{color:var(--mostaza);text-decoration:none}
       <div class="card">
         <h3>Público general</h3>
         <div class="precio">$97</div>
-        <p>Masterclass en vivo + Guía Paso a Paso + Kit de Arranque + BONO VIP del video + grabación + Zoom de dudas.</p>
+        <p>Masterclass en vivo + Guía Paso a Paso + Kit de Arranque + BONO de tu primer video (idea, gancho y guión) + grabación.</p>
         <a class="btn" href="https://buy.stripe.com/4gM9AS2ZG1P8gnj8EleME1T">Quiero mi cupo — $97</a>
         <p class="micro">Pago seguro con Stripe.</p>
       </div>
@@ -142,7 +151,7 @@ footer a{color:var(--mostaza);text-decoration:none}
         <p class="micro">Miembros del Club: pagan $67 con su código privado (lo reciben dentro del Club).</p>
       </div>
     </div>
-    <p class="micro" style="max-width:600px;margin:30px auto 0">Cupo total: 30 a 40 mujeres. Las inscripciones cierran el <b>lunes 9 de noviembre a medianoche</b> — quien entra alcanza a preparar su migración con el checklist que le envío.</p>
+    <p class="micro" style="max-width:600px;margin:30px auto 0">Cupo total limitado: 30 a 40 personas — abierto también para hombres que quieran crear su asistente. Las inscripciones cierran el <b>lunes 9 de noviembre a medianoche</b> — quien entra alcanza a preparar su migración con el checklist que le envío.</p>
   </div>
 </section>
 
@@ -159,5 +168,9 @@ footer a{color:var(--mostaza);text-decoration:none}
   Johanna Brizuela · @estoesjohana · Entre Nosotras Mujer Club · entrenosotrasmujer.com<br>
   Masterclass «Tu asistente virtual desde cero» · Miércoles 11 de noviembre de 2026 · 6:00–9:00 PM ET · Zoom
 </footer>
+<div class="sticky-cta">
+  <span class="txt">Tu asistente virtual desde cero · Mié 11 de noviembre · 6:00 PM ET</span>
+  <a href="https://buy.stripe.com/4gM9AS2ZG1P8gnj8EleME1T">QUIERO ASEGURAR MI CUPO</a>
+</div>
 </body>
 </html>
