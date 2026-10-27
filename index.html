@@ -7,7 +7,7 @@
 <style>
 :root{
   --vino:#3E0111; --vino-2:#2A010B; --vino-claro:#5A1226;
-  --blanco:#FFFFFF; --crema:#F6F0E3; --oro:#C9A24B; --mostaza:#F5D67B;
+  --blanco:#FFFFFF; --crema:#F6F0E3;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{overflow-x:hidden}
@@ -16,50 +16,50 @@ body{font-family:'Montserrat',sans-serif;color:var(--crema);background:var(--vin
 .wrap{max-width:880px;margin:0 auto;padding:0 24px}
 section{padding:64px 0}
 .logo{width:min(300px,70vw);height:auto;display:block;margin:0 auto}
-.kicker{font-size:12.5px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--oro);margin-bottom:22px}
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--blanco);margin-bottom:22px}
 h1,h2{font-family:'Playfair Display',serif;color:var(--blanco);line-height:1.12}
 h1{font-size:52px;font-weight:900}
 h2{font-size:36px;font-weight:700;margin-bottom:20px}
-h1 .it,h2 .it{font-style:italic;font-weight:700;color:var(--mostaza)}
+h1 .it,h2 .it{font-style:italic;font-weight:700;color:var(--crema)}
 .sub{font-family:'Playfair Display',serif;font-style:italic;font-size:24px;color:var(--crema);margin-top:16px;line-height:1.35}
 .lead{font-size:17.5px;line-height:1.75;margin:24px auto 0;max-width:640px;color:var(--crema)}
-.line{width:74px;height:2px;background:var(--oro);margin:26px auto}
+.line{width:74px;height:2px;background:var(--blanco);margin:26px auto}
 .datos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:34px}
 .dato{border:1px solid rgba(246,240,227,.35);border-radius:999px;padding:11px 22px;
   font-size:14.5px;font-weight:600;letter-spacing:.04em;color:var(--blanco)}
-.dato b{color:var(--mostaza)}
+.dato b{color:var(--blanco)}
 .btn{display:inline-block;margin-top:30px;padding:19px 52px;border-radius:999px;
   font-weight:700;font-size:17.5px;letter-spacing:.02em;text-decoration:none;
   background:var(--blanco);color:var(--vino);box-shadow:0 16px 36px rgba(0,0,0,.35);transition:transform .25s}
 .btn:hover{transform:translateY(-2px)}
-.btn.oro{background:var(--mostaza);color:var(--vino-2)}
+.btn.oro{background:var(--blanco);color:var(--vino)}
 .micro{margin-top:14px;font-size:13px;letter-spacing:.05em;opacity:.75}
 .lista{list-style:none;max-width:600px;margin:26px auto 0}
 .lista li{font-size:16.5px;line-height:1.6;padding:11px 0;border-bottom:1px dashed rgba(246,240,227,.25)}
 .lista li:last-child{border-bottom:none}
-.lista li::before{content:'—';margin-right:9px;color:var(--oro);font-weight:700}
+.lista li::before{content:'—';margin-right:9px;color:var(--blanco);font-weight:700}
 .alt{background:var(--vino-2)}
 .tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:44px;max-width:760px;margin-left:auto;margin-right:auto}
 .card{border:1px solid rgba(246,240,227,.4);border-radius:24px;padding:44px 34px;background:rgba(255,255,255,.03);position:relative}
 .card.destacado{background:var(--blanco);color:var(--vino)}
 .card h3{font-family:'Playfair Display',serif;font-size:27px;color:var(--blanco)}
 .card.destacado h3{color:var(--vino)}
-.precio{font-size:54px;font-weight:700;color:var(--mostaza);margin:12px 0 6px}
+.precio{font-size:54px;font-weight:700;color:var(--blanco);margin:12px 0 6px}
 .card.destacado .precio{color:var(--vino)}
 .card p{font-size:15px;line-height:1.65}
 .card.destacado p{color:#3A3A3A}
-.tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--mostaza);color:var(--vino-2);
+.tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blanco);color:var(--vino);
   font-size:11.5px;font-weight:700;letter-spacing:.16em;padding:7px 18px;border-radius:999px;text-transform:uppercase;white-space:nowrap}
 .frase{font-family:'Playfair Display',serif;font-style:italic;font-size:29px;line-height:1.4;color:var(--blanco);max-width:720px;margin:0 auto}
 footer{background:#1B000A;color:rgba(246,240,227,.65);padding:40px 20px;font-size:13.5px;line-height:1.7}
-footer a{color:var(--mostaza);text-decoration:none}
-.presentan{font-family:'Playfair Display',serif;font-size:29px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blanco);opacity:1;margin-bottom:18px}
-.titulo-evento{font-family:'Playfair Display',serif;font-size:44px;font-weight:900;letter-spacing:.10em;text-transform:uppercase;color:var(--mostaza);margin-bottom:16px}
+footer a{color:var(--blanco);text-decoration:none}
+.presentan{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blanco);opacity:1;margin-bottom:14px}
+.titulo-evento{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--blanco);opacity:.85;margin-bottom:14px}
 .logo-esquina{position:absolute;top:16px;left:16px;width:64px;height:auto}
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:999;background:rgba(27,0,10,.94);border-top:1px solid rgba(246,240,227,.28);padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:18px}
 .sticky-cta .txt{font-size:14.5px;font-weight:600;color:var(--crema);letter-spacing:.02em}
-.sticky-cta a{display:inline-block;background:var(--mostaza);color:var(--vino-2);font-weight:700;font-size:15.5px;letter-spacing:.04em;padding:14px 32px;border-radius:999px;text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.4);white-space:nowrap}
-@media(max-width:720px){h1{font-size:37px}h2{font-size:29px}.sub{font-size:20px}section{padding:48px 0}.frase{font-size:23px}.presentan{font-size:20px}.titulo-evento{font-size:29px}.logo-esquina{width:48px;top:12px;left:12px}.sticky-cta .txt{display:none}.sticky-cta a{width:100%;text-align:center}}
+.sticky-cta a{display:inline-block;background:var(--blanco);color:var(--vino);font-weight:700;font-size:15.5px;letter-spacing:.04em;padding:14px 32px;border-radius:999px;text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.4);white-space:nowrap}
+@media(max-width:720px){h1{font-size:37px}h2{font-size:29px}.sub{font-size:20px}section{padding:48px 0}.frase{font-size:23px}.presentan{font-size:17px}.titulo-evento{font-size:13px;letter-spacing:.24em}.logo-esquina{width:48px;top:12px;left:12px}.sticky-cta .txt{display:none}.sticky-cta a{width:100%;text-align:center}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 </head>
@@ -162,7 +162,7 @@ footer a{color:var(--mostaza);text-decoration:none}
     <p class="frase">«Yo muevo mi negocio entero con mi asistente. Esa noche, tú sales con el tuyo trabajando. Si yo pude, vos también podéis.»</p>
     <p class="micro" style="margin-top:18px">— Johanna Brizuela</p>
     <a class="btn oro" href="#precios">Asegurar mi cupo</a>
-    <p class="micro">¿Dudas? Escríbeme por WhatsApp: <a href="https://wa.me/19046293118" style="color:var(--mostaza);text-decoration:none">+1 (904) 629-3118</a></p>
+    <p class="micro">¿Dudas? Escríbeme por WhatsApp: <a href="https://wa.me/19046293118" style="color:var(--blanco);text-decoration:none">+1 (904) 629-3118</a></p>
   </div>
 </section>
 
